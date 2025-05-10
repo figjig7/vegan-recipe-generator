@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What Can I Make? - Vegan Recipe Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🥗 What Can I Make?</h1>
+    <p>Enter the ingredients you have:</p>
+    <input type="text" id="ingredientsInput" placeholder="e.g. tomato, rice, garlic" />
+    <div class="filters">
+      <select id="mealType">
+        <option value="">All Meal Types</option>
+        <option value="breakfast">Breakfast</option>
+        <option value="lunch">Lunch</option>
+        <option value="dinner">Dinner</option>
+        <option value="snack">Snack</option>
+      </select>
+      <label><input type="checkbox" id="simpleMode" /> 3-ingredient meals only</label>
+    </div>
+    <div class="buttons">
+      <button onclick="findRecipes()">Find Recipes</button>
+      <button onclick="surpriseMe()">Surprise Me!</button>
+    </div>
+    <div id="results"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
