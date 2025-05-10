@@ -1,0 +1,89 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to bottom right, #e0f7fa, #fff);
+  margin: 0;
+  padding: 2rem;
+  color: #333;
+  display: flex;
+  justify-content: center; /* Centers the content horizontally */
+  align-items: flex-start; /* Keeps items aligned from the top */
+  min-height: 100vh; /* Full height */
+}
+
+.container {
+  width: 100%;
+  max-width: 900px; /* Limit the width of the content */
+  padding: 2rem;
+  text-align: center; /* Centers the header and other text */
+}
+
+h1 {
+  margin-bottom: 2rem;
+  color: #00796b;
+  font-size: 2rem;
+}
+
+#controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the form controls */
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+input, select, button {
+  padding: 0.75rem 1rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+}
+
+select {
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background-color: #00796b;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #004d40;
+}
+
+.recipe {
+  background-color: #ffffff;
+  border-left: 5px solid #00796b;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  width: 100%;
+  max-width: 600px; /* Make the recipe cards not too wide */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#results {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+input[type="text"] {
+  width: 300px; /* Fixed width for the ingredient input */
+}
+
+select, button {
+  width: auto; /* Let these take up only as much space as needed */
+}
